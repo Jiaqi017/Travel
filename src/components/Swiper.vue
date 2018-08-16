@@ -2,15 +2,6 @@
     <div class="wrapper">
         <swiper :options="swiperOption">
             <!-- slides -->
-     <!--       <swiper-slide>
-                <img class='swiper-img' src="https://imgs.qunarzz.com/vc/c4/38/76/284d1c5cd02b88a4cd7247b8e3.jpg_92.jpg" alt=""/>
-            </swiper-slide>
-            <swiper-slide>
-                <img class='swiper-img' src="https://imgs.qunarzz.com/ftejia/1807/73/0d47b847a6d675.jpg" alt=""/>
-            </swiper-slide>
-            <swiper-slide>
-                <img class='swiper-img' src="https://imgs.qunarzz.com/vc/89/19/e9/ff75c13186670f36111d2e5640.jpg_92.jpg" alt=""/>
-            </swiper-slide>-->
             <swiper-slide v-for="item of swiperList" :key="item.id">
                 <img class='swiper-img' :src="item.imgUrl"/>
             </swiper-slide>
